@@ -1,11 +1,28 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <Navigation />
+  <main class="container mx-auto">
+    <section class="flex flex-col justify-center items-center mt-40 gap-4">
+      <h1
+        class="text-6xl font-bold text-light tracking-tight max-w-4xl text-center"
+      >
+        Your platform for learning Go, one project at a time.
+      </h1>
+      <p class="text-xl max-w-xl text-center">
+        An open-sourced, project based learning platform to master Golang from
+        beginners to advance.
+      </p>
+      <button
+        class="px-8 py-2 border rounded border-accent hover:bg-accent mt-10"
+        >Explore</button
+      >
+    </section>
+  </main>
 </Layout>

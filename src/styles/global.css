@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans Variable", "sans-serif";
+  --color-dark: #1d2021;
+  --color-light: #f9f5d7;
+  --color-special: #FE8019;
+  --color-accent: #79740e;
+}
