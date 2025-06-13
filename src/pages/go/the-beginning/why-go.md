@@ -1,11 +1,19 @@
 ---
 layout: "../../../layouts/MarkdownLayout.astro"
-title: "Why Go"
+title: "Why Go?"
 subtitle: "The Beginning"
 backlink: "/roadmap#the-beginning"
 ---
 
-### Simplicity and Readability
+### A Bit of History
+
+Go, also called Golang, was created at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson. It was created to provide a statically and strongly typed language similar to C in syntax, but also with features such as memory safety, garbage collection.
+
+## Why Choose Go?
+
+There are hundreds if not thousands of programming languages, so why choose Go?
+
+### Simplicity
 
 Go was designed with simplicity in mind. The language has a small set of keywords and a clean syntax that makes it easy to read and understand. This simplicity doesn't come at the cost of power – Go provides all the tools you need to build robust applications.
 
@@ -19,26 +27,15 @@ func main() {
 }
 ```
 
-## Performance
+### Performance
 
-Go compiles to native machine code, which means your applications run fast. The garbage collector is designed for low latency, making Go suitable for high-performance applications.
+Go compiles to native machine code, which means that your program is going to be converted into a binary and not into any intermediate (looking at you Java.) This results in extremely fast applications that are efficient in their memory usage. The garbage collector is designed for low latency, making Go suitable for high-performance applications.
 
-## Concurrency
+Other than that, you will come to learn very quickly that Go applications compiles really fast, and if you have worked with a CMake or a Java project, you will know the difference.
 
-One of Go's standout features is its built-in support for concurrency through goroutines and channels. This makes it incredibly easy to write programs that can handle multiple tasks simultaneously.
+### Batteries Included
 
-```go
-go func() {
-    // This runs concurrently
-    fmt.Println("Running in a goroutine!")
-}()
-```
-
-## Strong Standard Library
-
-Go comes with a comprehensive standard library that includes everything from HTTP servers to JSON parsing, reducing the need for external dependencies.
-
-> "Go is an open source programming language that makes it easy to build simple, reliable, and efficient software." - The Go Team
+Go has almost everything you need to build a fully fledged application from the get go. It's library is vast providing packages to create anything from a simple CLI application to a production ready web server.
 
 ## Growing Ecosystem
 

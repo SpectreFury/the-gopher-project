@@ -15,17 +15,34 @@ import Layout from "../layouts/Layout.astro";
         <cite class="text-light">- Confucius</cite>
       </div>
 
-      <div class="flex flex-col rounded">
+      <div class="flex flex-col rounded mt-10">
         <div class="border border-neutral-700 p-4 rounded rounded-b-none">
-          <h2 id="the-beginning" class="text-lg font-medium">The Beginning</h2>
+          <h2 id="the-beginning" class="text-yellow text-lg font-medium">
+            The Beginning
+          </h2>
         </div>
         <ul
-          class="border border-neutral-700 border-t-0 p-4 rounded rounded-t-none"
+          class="border border-neutral-700 border-t-0 p-6 rounded rounded-t-none space-y-3"
         >
-          <li>
-            <a href="/go/the-beginning/why-go" class="hover:underline"
-              >Why Go?</a
+          <li
+            class="border-b border-neutral-700 pb-3 last:border-b-0 last:pb-0"
+          >
+            <a
+              href="/go/the-beginning/why-go"
+              class="block p-3 rounded-lg hover:bg-neutral-800 transition-colors duration-200 hover:text-special font-medium"
             >
+              Why Go?
+            </a>
+          </li>
+          <li
+            class="border-b border-neutral-700 pb-3 last:border-b-0 last:pb-0"
+          >
+            <a
+              href="/go/the-beginning/installing-go"
+              class="block p-3 rounded-lg hover:bg-neutral-800 transition-colors duration-200 hover:text-special font-medium"
+            >
+              Installing Go
+            </a>
           </li>
         </ul>
       </div>

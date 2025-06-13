@@ -20,9 +20,7 @@ const { frontmatter } = Astro.props;
 </Layout>
 
 <style>
-  /* Custom Markdown styling */
   .prose {
-    /* Headings */
     h1,
     h2,
     h3,
@@ -49,14 +47,14 @@ const { frontmatter } = Astro.props;
       font-size: 1.5rem;
     }
 
-    /* Paragraphs */
     p {
+      font-weight: 400;
+      font-size: 1.2rem;
       line-height: 1.7;
       margin-bottom: 1.5rem;
       color: var(--color-light);
     }
 
-    /* Links */
     a {
       color: var(--color-special);
       text-decoration: none;
