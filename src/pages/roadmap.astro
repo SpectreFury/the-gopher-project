@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="container mx-auto">
+    <section class="max-w-4xl mx-auto mt-10 flex flex-col gap-4">
+      <p class="text-xl font-light">
+        Follow the roadmap in order to get the best possible result out of this
+        course. If you feel stuck, Google it, ask on Stack Overflow, or ask our
+        community on Discord.
+      </p>
+      <div>
+        <q>It does not matter how slowly you go as long as you do not stop. </q>
+        <cite class="text-light">- Confucius</cite>
+      </div>
+
+      <div class="flex flex-col rounded">
+        <div class="border border-neutral-700 p-4 rounded rounded-b-none">
+          <h2 id="the-beginning" class="text-lg font-medium">The Beginning</h2>
+        </div>
+        <ul
+          class="border border-neutral-700 border-t-0 p-4 rounded rounded-t-none"
+        >
+          <li>
+            <a href="/go/the-beginning/why-go" class="hover:underline"
+              >Why Go?</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</Layout>

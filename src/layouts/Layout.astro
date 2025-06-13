@@ -1,6 +1,7 @@
 ---
 import "@fontsource-variable/ibm-plex-sans";
 import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <!doctype html>
@@ -13,6 +14,7 @@ import "../styles/global.css";
     <title>The Gopher Project</title>
   </head>
   <body class="bg-dark text-light">
+    <Navigation />
     <slot />
   </body>
 </html>

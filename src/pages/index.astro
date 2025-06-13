@@ -7,7 +7,6 @@ import Navigation from "../components/Navigation.astro";
 ---
 
 <Layout>
-  <Navigation />
   <main class="container mx-auto">
     <section class="flex flex-col justify-center items-center mt-40 gap-4">
       <h1
@@ -19,9 +18,10 @@ import Navigation from "../components/Navigation.astro";
         An open-sourced, project based learning platform to master Golang from
         beginners to advance.
       </p>
-      <button
-        class="px-8 py-2 border rounded border-accent hover:bg-accent mt-10"
-        >Explore</button
+      <a
+        href="/roadmap"
+        class="px-8 py-2 border rounded border-accent hover:bg-accent mt-10 cursor-pointer"
+        >Explore</a
       >
     </section>
   </main>
