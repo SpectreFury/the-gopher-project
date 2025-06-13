@@ -96,18 +96,95 @@ const { frontmatter } = Astro.props;
       margin: 1.5rem 0;
       font-style: italic;
       color: #d5c4a1;
-    }
-
-    /* Lists */
+    }    /* Lists */
     ul,
     ol {
-      margin: 1rem 0;
-      padding-left: 2rem;
+      margin: 2rem 0;
+      padding: 0;
+      background-color: rgba(254, 128, 25, 0.05);
+      border-left: 3px solid var(--color-special);
+      border-radius: 0.5rem;
+      padding: 1.5rem 2rem;
     }
 
-    li {
+    /* Unordered Lists */
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      position: relative;
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      line-height: 1.7;
+      color: var(--color-light);
+    }
+
+    ul li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--color-special);
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    /* Ordered Lists */
+    ol {
+      counter-reset: list-counter;
+      background-color: rgba(121, 116, 14, 0.05);
+      border-left-color: var(--color-accent);
+    }
+
+    ol li {
+      position: relative;
+      margin-bottom: 1rem;
+      padding-left: 2.5rem;
+      line-height: 1.7;
+      color: var(--color-light);
+      counter-increment: list-counter;
+    }
+
+    ol li::before {
+      content: counter(list-counter);
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: var(--color-accent);
+      color: var(--color-light);
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.875rem;
+    }
+
+    /* Nested Lists */
+    ul ul,
+    ol ol,
+    ul ol,
+    ol ul {
+      margin: 0.5rem 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-left-width: 2px;
+      padding: 1rem 1.5rem;
+    }
+
+    ul ul li::before {
+      content: "◦";
+      color: var(--color-accent);
+    }
+
+    /* List items with better spacing */
+    li p {
       margin-bottom: 0.5rem;
-      line-height: 1.6;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
     }
 
     /* Tables */
