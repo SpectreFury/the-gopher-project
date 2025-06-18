@@ -27,3 +27,27 @@ It is finally time that we install Go to your system! I know right, exciting. Go
 2. Click on the download button.
 3. There should be multiple options to download Go for different operating systems. You want to choose MacOS, look for .pkg files in specific. Once you find it, just download it by clicking on it.
 4. Follow all the steps till Go is installed on your computer.
+
+Once you're done with installing Go on your system, we can proceed to the next lesson, however it would be best if you checked if your installing was successful. To do that, simply open your preferred terminal and type the following:
+
+```
+go version
+```
+
+Run the command and you should get something similar to this:
+
+```
+go version go1.24.2 windows/amd64
+```
+
+If you see something like this or similar, congratulations! You have Go installed in your computer and you are ready to become a _Gopher_.
+
+If you see something like
+
+```
+bash: go: command not found
+```
+
+Go was either not successfully installed or you have a simple PATH error. 
+
+---
