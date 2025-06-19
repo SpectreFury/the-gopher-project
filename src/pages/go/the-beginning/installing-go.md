@@ -48,6 +48,6 @@ If you see something like
 bash: go: command not found
 ```
 
-Go was either not successfully installed or you have a simple PATH error. 
+Go was either not successfully installed or you have a simple PATH error.
 
 ---
