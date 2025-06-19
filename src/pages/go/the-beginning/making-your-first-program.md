@@ -5,7 +5,7 @@ subtitle: "The Beginning"
 backlink: "/roadmap#the-beginning"
 ---
 
-## Hello World
+## Preface
 
 We are going to start off very simple and write what's called a "Hello World" program. It's like a initiation ceremony and after you write this, you can be called a Go programmer.
 
@@ -79,8 +79,53 @@ The first line is the module path we gave while we were initializing the module.
 
 The next line is the minimum version of Go required for our module. This is likely going to be different for you if you're seeing this lesson in the future.
 
+### Creating a Go file
+
+Now we are ready to create our file go file. Open the project in your preferred code editor (I use neovim btw!) and create a `main.go` file inside `thegopherproject` directory that we previously created. Once you have created this file, the directory should contain two files, the go.mod and the main.go files.
+
+```bash
+ls
+```
+
+This command should give the following result
+
+```bash
+-a---           6/19/2025  7:37 PM             38 go.mod
+-a---           6/19/2025  9:04 PM             82 main.go
+```
+
+Pat yourself on the back, you have created your go file.
+
+Now we just gotta print hello world to the console, let's see how we can do that.
+
+### Hello World
+
+Open the main.go file in any code editor you like and type the following, I'm going to explain in details what's going on later but for now, we will get to see our long awaited hello world in the console.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello World!")
+}
+```
+
+Good job, now all we gotta do is run our application.
+
+Open your terminal inside our `thegopherproject` directory and type
+
+```bash
+go run .
+```
+
+This will compile and run our application and you will get to see the following
+
+```
+Hello World!
+```
+
+We finally have our hello world printed to the console. Well done fellow _Gophers_. Give yourself a pat on the back, that was a lot.
+
 ## Assignment
-
-This is time for your first assignment. Some of these are going to just be things that you have to read (boring, I know,) and the others, you'll have to do yourself. I suggest you do both, as it will be a great opportunity to learn from official resources as well as the ones we provide.
-
-1. Check out the Go [Wikipedia](<https://en.wikipedia.org/wiki/Go_(programming_language)>). You don't have to read absolutely everything, just get an idea about the language.
