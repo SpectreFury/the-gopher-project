@@ -7,6 +7,7 @@ backlink: "/roadmap#the-beginning"
 
 ## A Bit of History
 
+
 Go, also called Golang, was created at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson. It was created to provide a statically and strongly typed language similar to C in syntax, but also with features such as memory safety, garbage collection.
 
 ## Why Choose Go?
@@ -42,4 +43,4 @@ You don't have to rely on libraries and packages though as Go has a really matur
 This is time for your first assignment. Some of these are going to just be things that you have to read (boring, I know,) and the others, you'll have to do yourself. I suggest you do both, as it will be a great opportunity to learn from official resources as well as the ones we provide.
 
 1. Check out the Go [Wikipedia](<https://en.wikipedia.org/wiki/Go_(programming_language)>). You don't have to read absolutely everything, just get an idea about the language.
-2. Go's [official website](<https://go.dev/#>) has a section on "Why Go?"; you should check it out. 
+2. Go's [official website](<https://go.dev/#>) has a section on "Why Go?"; you should check it out.
