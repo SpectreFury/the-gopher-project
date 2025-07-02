@@ -11,7 +11,7 @@
   "dependencies": {
     "@fontsource-variable/ibm-plex-sans": "^5.2.6",
     "@tailwindcss/vite": "^4.1.8",
-    "astro": "^5.9.2",
+    "astro": "^5.10.2",
     "tailwindcss": "^4.1.8"
   }
 }

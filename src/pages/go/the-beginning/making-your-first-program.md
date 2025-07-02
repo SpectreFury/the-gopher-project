@@ -129,3 +129,11 @@ Hello World!
 We finally have our hello world printed to the console. Well done fellow _Gophers_. Give yourself a pat on the back, that was a lot.
 
 ## Assignment
+
+1. Try to modify the quotes inside the `fmt.println()` function and see what happens.
+2. Can you print two things right below each other? Something like:
+
+   ```
+   SpectreFury
+   I am learning Go!
+   ```
