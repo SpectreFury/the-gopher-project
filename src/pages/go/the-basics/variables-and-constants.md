@@ -1,6 +1,6 @@
 ---
 layout: "../../../layouts/MarkdownLayout.astro"
-title: "Variables and Types"
+title: "Variables and Constants"
 subtitle: "The Basics"
 backlink: "/roadmap#the-beginning"
 ---
@@ -130,3 +130,86 @@ func main() {
 All I want you to pay attention at in the above code is the string `I am a constant!`. We are not saving the string anywhere and we cannot change the value of that string unless we delete it manually, and replace it. At that point, it's not even going to be the same string.
 
 Constants are found everywhere in programming when you don't want to save the data for later usage.
+
+## Operators
+
+We can use operators to do different operations over the variables or constant we have. There are different types of operators, so let's discuss about them here.
+
+### Arithmetic
+
+Arithmetic operators are used to do mathematical operations over values in Go. They usually require two or more values to work, but there are exception like the `-` operator.
+
+Here are all the arithmetic operators in Go:
+
+```go
+package main
+
+import ("fmt")
+
+func main() {
+    a := 90
+    b := 10
+
+    counter := 0
+
+    fmt.Println("Addition: ", a + b);
+    fmt.Println("Subtraction: ", a - b);
+    fmt.Println("Multiplication: ", a * b);
+    fmt.Println("Division (integer division): ", a / b);
+    fmt.Println("Modulus (remainder division)", a % b);
+
+
+// This will increase the value by 1 (can also be written as counter = counter + 1)
+    counter++;
+
+// This will decrease the value by 1 (can also be written as counter = counter - 1)
+    counter--;
+
+}
+```
+
+A important thing to note is that Go follows the order of operations just like any other programming language. You most likely have heard about PEMDAS or BODMAS.
+
+```go
+package main
+
+import ("fmt")
+
+func main() {
+    // This should evaluate to 7
+    fmt.Println((10 / 2) + 1 * 3 - 1);
+}
+```
+
+### Relational
+
+Relational operators are used to compare two or more values and give us either true or false according to the result of the conditions. Here's all of them:
+
+- == (Is Equal To)
+- != (Not Equals To)
+- \> (Greater Than)
+- < (Less Than)
+- \>= (Greater Than or Equals to)
+- <= (Less Than or Equals to)
+
+```go
+package main
+
+import ("fmt")
+
+func main() {
+    fmt.Println("Is Equal To: ", 10 == 10)
+    fmt.Println("Not Equals To: "10 != 1)
+    fmt.Println("Greater Than: ", 11 > 10)
+    fmt.Println("Less Than: ", 9 < 10)
+    fmt.Println("Greater Than or Equals to: ", 10 >= 10)
+    fmt.Println("Less Than or Equals to: ",  9 <= 10)
+}
+
+```
+
+---
+
+## Assignment
+
+1. Do some basic math, try using basic
