@@ -11,7 +11,6 @@ It is time to finally learn Go in detail. Don't worry, we are going to go at an 
 
 If you have ever taken a math class in your life and the chances of that are pretty high, you must have heard about the concept of variables and constants. It mathematical terms, a _variable_ is something that does not have a fixed value and can be subject to change.
 
-Meanwhile, a constant is something that's static; unchangeable.
 
 Similarly in Go, and almost every other programming language on the planet, we have the concepts of variables and constants. In Go, the variable is like a container that can have any value (not exactly, but we're going to learn more about that later.)
 
@@ -115,7 +114,7 @@ Go is a statically typed language which means that you are not allowed to change
 
 ### Constants
 
-Constants in Go is just data that's not stored inside a variable. For example:
+Constants in Go are very similar to variables, well, they are just variables with one caveat. You cannot change it's value. Let's look at a constant in action.
 
 ```go
 package main
@@ -123,13 +122,41 @@ package main
 import ("fmt")
 
 func main() {
-    fmt.Println("I am a constant!");
+    const name string = "Bruce Wayne";
+
+    fmt.Println(name)
+}
+```
+If you run our little program, we will get this:
+
+```
+Bruce Wayne
+```
+
+Let's try to modify the value of the constant, see what happens.
+
+```go
+package main
+
+import ("fmt")
+
+func main() {
+    const name string = "Bruce Wayne";
+    fmt.Println(name)
+
+    name = "Jason Todd"
 }
 ```
 
-All I want you to pay attention at in the above code is the string `I am a constant!`. We are not saving the string anywhere and we cannot change the value of that string unless we delete it manually, and replace it. At that point, it's not even going to be the same string.
+Your compiler is going to scream at you for doing that, but let's ignore it and try to run our application.
 
-Constants are found everywhere in programming when you don't want to save the data for later usage.
+You should remember how to run the project by now, so let's see the result.
+
+```bash
+.\main.go:11:2: cannot assign to name (neither addressable nor a map index expression)
+```
+
+This is just as we expected, Constants value cannot be modified.
 
 ## Operators
 
