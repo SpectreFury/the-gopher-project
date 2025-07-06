@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { BookOpen, Code } from "lucide-astro";
 ---
 
 <Layout>
@@ -31,7 +32,10 @@ import Layout from "../layouts/Layout.astro";
               href="/go/the-beginning/why-go"
               class="block p-3 rounded-lg hover:bg-neutral-800 transition-colors duration-200 hover:text-special font-medium"
             >
-              Why Go?
+              <span class="flex items-center gap-2">
+                <BookOpen size={20} />
+                Why Go?
+              </span>
             </a>
           </li>
           <li
@@ -41,7 +45,10 @@ import Layout from "../layouts/Layout.astro";
               href="/go/the-beginning/installing-go"
               class="block p-3 rounded-lg hover:bg-neutral-800 transition-colors duration-200 hover:text-special font-medium"
             >
-              Installing Go
+              <span class="flex items-center gap-2">
+                <BookOpen size={20} />
+                Installing Go
+              </span>
             </a>
           </li>
           <li
@@ -51,7 +58,10 @@ import Layout from "../layouts/Layout.astro";
               href="/go/the-beginning/making-your-first-program"
               class="block p-3 rounded-lg hover:bg-neutral-800 transition-colors duration-200 hover:text-special font-medium"
             >
-              Making Your First Program
+              <span class="flex items-center gap-2">
+                <BookOpen size={20} />
+                Making Your First Program
+              </span>
             </a>
           </li>
         </ul>
@@ -72,7 +82,10 @@ import Layout from "../layouts/Layout.astro";
               href="/go/the-basics/variables-and-constants"
               class="block p-3 rounded-lg hover:bg-neutral-800 transition-colors duration-200 hover:text-special font-medium"
             >
-              Variables and Types
+              <span class="flex items-center gap-2">
+                <BookOpen size={20} />
+                Variables and Types
+              </span>
             </a>
           </li>
           <li
@@ -82,7 +95,23 @@ import Layout from "../layouts/Layout.astro";
               href="/go/the-basics/conditionals"
               class="block p-3 rounded-lg hover:bg-neutral-800 transition-colors duration-200 hover:text-special font-medium"
             >
-            Conditionals
+              <span class="flex items-center gap-2">
+                <BookOpen size={20} />
+                Conditionals
+              </span>
+            </a>
+          </li>
+          <li
+            class="border-b border-neutral-700 pb-3 last:border-b-0 last:pb-0"
+          >
+            <a
+              href="/go/the-basics/project-calculator"
+              class="block p-3 rounded-lg hover:bg-neutral-800 transition-colors duration-200 hover:text-special font-medium"
+            >
+              <span class="flex items-center gap-2">
+                <Code size={20} class="text-yellow" />
+                Calculator
+              </span>
             </a>
           </li>
         </ul>

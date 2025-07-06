@@ -122,9 +122,9 @@ package main
 import ("fmt")
 
 func main() {
-    const name string = "Bruce Wayne";
+    const NAME string = "Bruce Wayne";
 
-    fmt.Println(name)
+    fmt.Println(NAME)
 }
 ```
 If you run our little program, we will get this:
@@ -141,10 +141,10 @@ package main
 import ("fmt")
 
 func main() {
-    const name string = "Bruce Wayne";
-    fmt.Println(name)
+    const NAME string = "Bruce Wayne";
+    fmt.Println(NAME)
 
-    name = "Jason Todd"
+    NAME = "Jason Todd"
 }
 ```
 
@@ -156,11 +156,13 @@ You should remember how to run the project by now, so let's see the result.
 .\main.go:11:2: cannot assign to name (neither addressable nor a map index expression)
 ```
 
-This is just as we expected, Constants value cannot be modified.
+This is just as we expected, Constants value cannot be modified. If you try to modify the value, the compiler is going to scream at you and rightfully so. You must have seen that we are just all capital letter as the variable name. This is because of a convention to use all caps for constant variables.
+
+So when should you use variables and when should you use constants? If you know during the declaration of the variable that it's value is going to change then use a variable, and if that's not the case, use constant. Other good way of doing this is just using const variables unless you need to change it.
 
 ## Operators
 
-We can use operators to do different operations over the variables or constant we have. There are different types of operators, so let's discuss about them here.
+We can use operators to do different operations over the variables or constant we have. There are different types of operators, so let's discuss about them here. 
 
 ### Arithmetic
 
@@ -234,6 +236,8 @@ func main() {
 }
 
 ```
+
+At this point, you know enough to make a simple CLI application and it's exactly what we're going to do next.
 
 ---
 
