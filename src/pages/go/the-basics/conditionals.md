@@ -133,7 +133,7 @@ func main() {
 
 The `switch(day)` refers to what value we will have the branching for, in this case, we want to print different lines for different days of the week.
 
-The `case` keyword is going to run if the current value is equal to what's provide inside the switch statement. So, it day is equals to Sunday, then the `case "Sunday":` will work.
+The `case` keyword is going to run if the current value is equal to what's provide inside the switch statement. So, if day is equals to Sunday, then the `case "Sunday":` will work.
 
 ---
 
