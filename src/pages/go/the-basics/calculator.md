@@ -20,3 +20,7 @@ It is time to make our first project with the knowledge of everything we have le
 4. Write the main function and use the print function in go and run it with `go run .` to test if your application is running. Now, we're good to go.
 
 5. We want this to be really basic, just get two number from the user and ask them for which operator they want to do e.g. multiply, divide.
+
+6. After the user adds their inputs, you want to show the result of the operations.
+
+7. Right now, our application will terminal when we get the answer which is as expect, but if you wanna do your own research, which I highly suggest, figure out a way to again ask till you exit the application manually. We will work on this if you decide not to do it.
