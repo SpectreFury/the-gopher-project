@@ -21,7 +21,7 @@ Inspired by The Odin Project's success in web development education, The Gopher 
 
 ### For Learners
 
-1. Visit [thegopherproject.com](https://thegopherproject.com) (or run locally)
+1. Visit [the-gopher-project.vercel.app](https://the-gopher-project.vercel.app) (or run locally)
 2. Start with "The Beginning" section
 3. Follow the roadmap in order
 4. Build projects as you learn
