@@ -7,7 +7,7 @@ backlink: "/roadmap#the-beginning"
 
 ## Introduction
 
-It is time to make our first project with the knowledge of everything we have learnt from the previous lessons. We are going to make a simple CLI calculator application. It's going to wonderful learning opportunity and a stepping stone to move on to more complex Go applications.
+It is time to make our first project with the knowledge of everything we have learnt from the previous lessons. We are going to make a simple CLI calculator application. It's going to be a wonderful learning opportunity and a stepping stone to move on to more complex Go applications.
 
 ## Guide
 
